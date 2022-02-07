@@ -14,8 +14,6 @@ async function getQuotes() {
     for (key in elem) {
         title.textContent = elem.text;
         text.textContent = elem.author;
-        console.log(elem.text);
-        console.log(elem.author);
     }
 
 }
@@ -23,11 +21,49 @@ async function getQuotes() {
 function changeImages(min, max) {
     let rund = Math.floor(Math.random() * (max - min) + min);
     image.src = `./images/${rund}.jpg`;
-    console.log(rund);
+
 }
 
+button.addEventListener('click', function (e) {
+    const x = e.clientX;
+    const y = e.clientY;
 
-button.addEventListener('click', function () {
+    const buttonTop = e.target.offsetTop;
+    const buttonLeft = e.target.offsetLeft;
+
+    const xInside = x - buttonLeft;
+    const yInside = y - buttonTop;
+
+    const circle = document.createElement('span');
+    circle.classList.add('circle');
+    circle.style.top = yInside + 'px';
+    circle.style.left = xInside + 'px';
+
+    this.appendChild(circle);
+
+    setTimeout(() => circle.remove(), 500);
     changeImages(1, 6);
     getQuotes();
 });
+
+
+
+// button.addEventListener('click', function (e) {
+//   const x = e.clientX
+//   const y = e.clientY
+
+//   const buttonTop = e.target.offsetTop
+//   const buttonLeft = e.target.offsetLeft
+
+//   const xInside = x - buttonLeft
+//   const yInside = y - buttonTop
+
+//   const circle = document.createElement('span')
+//   circle.classList.add('circle')
+//   circle.style.top = yInside + 'px'
+//   circle.style.left = xInside + 'px'
+
+//   this.appendChild(circle)
+
+//   setTimeout(() => circle.remove(), 500)
+// })
