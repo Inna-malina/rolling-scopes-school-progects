@@ -25,7 +25,7 @@ function changeImages(min, max) {
 }
 
 button.addEventListener('click', function (e) {
-    const x = e.clientX;
+    const x = e.clientX; //добавляем декор для кнопки
     const y = e.clientY;
 
     const buttonTop = e.target.offsetTop;
@@ -42,28 +42,8 @@ button.addEventListener('click', function (e) {
     this.appendChild(circle);
 
     setTimeout(() => circle.remove(), 500);
+
+
     changeImages(1, 6);
     getQuotes();
 });
-
-
-
-// button.addEventListener('click', function (e) {
-//   const x = e.clientX
-//   const y = e.clientY
-
-//   const buttonTop = e.target.offsetTop
-//   const buttonLeft = e.target.offsetLeft
-
-//   const xInside = x - buttonLeft
-//   const yInside = y - buttonTop
-
-//   const circle = document.createElement('span')
-//   circle.classList.add('circle')
-//   circle.style.top = yInside + 'px'
-//   circle.style.left = xInside + 'px'
-
-//   this.appendChild(circle)
-
-//   setTimeout(() => circle.remove(), 500)
-// })
