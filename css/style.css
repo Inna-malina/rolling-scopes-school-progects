@@ -2,7 +2,7 @@ body {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    background: url('/body.jpg');
+    background: url('../body.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Poppins', sans-serif;
@@ -158,7 +158,7 @@ body {
     height: 50px;
     display: block;
     background-repeat: no-repeat;
-    background: url('/rs_school_js.svg');
+    background: url('../rs_school_js.svg');
     filter: invert(1);
     transition: filter 0.2s ease;
 }
