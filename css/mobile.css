@@ -39,6 +39,12 @@
     .main__button_contaner {
         width: 80%;
     }
+
+    .footer__box-stadies__item a {
+        width: 95px;
+        height: 36px;
+    }
+
 }
 
 @media(max-width: 400px) {
