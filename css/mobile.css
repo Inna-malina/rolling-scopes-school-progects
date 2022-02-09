@@ -15,17 +15,6 @@
         background-size: inherit
     }
 
-    .wrapper {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-    }
-
-    .section__main-contaner {
-        height: 87vh;
-    }
 
     .image__main-images {
         width: 200px;
