@@ -1,0 +1,164 @@
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background: url('../body.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    /* height: 100vh; */
+
+}
+
+.center {
+    width: 50%;
+    margin: 0px auto;
+
+}
+
+.section__main-contaner {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #daede7;
+
+}
+
+.main__images-contaner {
+    display: flex;
+    justify-content: center;
+}
+
+.image__main-images {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 0px auto;
+    transition: all 0.2s ease;
+}
+
+.main__description-contaner {
+    display: flex;
+    flex-direction: column;
+}
+
+.title__description-main {
+    font-size: 20px;
+}
+
+.text__description-main {
+    font-size: 14px;
+    font-weight: 300;
+    text-align: end;
+}
+
+.main__button_contaner {
+    position: relative;
+    overflow: hidden;
+    bottom: 0px;
+    cursor: pointer;
+    width: 50%;
+    background: #c06471;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    border-radius: 5px;
+    margin: 0px auto;
+    transition: background 0.2s ease-in;
+
+}
+
+.main__button_contaner:hover {
+    background: #ad4e5a;
+}
+
+.main__button_contaner .circle {
+    position: absolute;
+
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: scale 0.5s ease-out;
+}
+
+@keyframes scale {
+    to {
+        transform: translate(-50%, -50%) scale(3);
+        opacity: 0;
+    }
+}
+
+.section__footer {
+    width: 100%;
+}
+
+.center {}
+
+.footer__section-contaner {
+
+    background: #75a29f;
+}
+
+.contaner__footer-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer__box {}
+
+.footer__box-years {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    color: white;
+}
+
+.footer__box-years>:not(:last-child) {
+    margin: 0px 20px 0px 0px;
+}
+
+.year__item a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.year__item a:hover {
+    color: #4d6569;
+
+}
+
+
+.footer__box-stadies {}
+
+.footer__box-stadies__item a {
+    width: 135px;
+    height: 50px;
+    display: block;
+    background-repeat: no-repeat;
+    background: url('../rs_school_js.svg');
+    filter: invert(1);
+    transition: filter 0.2s ease;
+}
+
+.footer__box-stadies__item a:hover {
+    filter: invert(39%) sepia(9%) saturate(910%) hue-rotate(141deg) brightness(92%) contrast(94%);
+}
+
+.stadies__item {}
